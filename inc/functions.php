@@ -6,8 +6,22 @@
  * @subpackage \inc\functions
  */
 
-// Exit if accessed directly
+// Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
+
+/**
+ * Load translations.
+ *
+ * @since 1.0.0
+ */
+function carte_de_survol_load_textdomain() {
+	load_plugin_textdomain(
+		'carte-de-survol',
+		false,
+		trailingslashit( basename( carte_de_survol()->dir ) ) . 'languages'
+	);
+}
+add_action( 'bp_loaded', 'carte_de_survol_load_textdomain', 11 );
 
 /**
  * Register assets for the hovercard.
@@ -16,10 +30,11 @@ defined( 'ABSPATH' ) || exit;
  */
 function carte_de_survol_register_assets() {
 	$cds = carte_de_survol();
+	$min = bp_core_get_minified_asset_suffix();
 
 	wp_register_script(
 		'carte-de-survol',
-		$cds->js_url . 'carte-de-survol.js',
+		$cds->js_url . "carte-de-survol{$min}.js",
 		array(
 			'wp-pointer',
 			'hoverIntent',
@@ -30,7 +45,7 @@ function carte_de_survol_register_assets() {
 		true
 	);
 
-	$style  = $cds->css_url . 'style.css';
+	$style = $cds->css_url . "style{$min}.css";
 
 	/**
 	 * If you want to override the styles:
@@ -78,8 +93,8 @@ add_action( 'bp_enqueue_scripts', 'carte_de_survol_enqueue_assets' );
  *
  * @since 1.0.0
  *
- * @param  array  $params The collection params.
- * @return array          The collection params.
+ * @param  array $params The collection params.
+ * @return array         The collection params.
  */
 function carte_de_survol_rest_members_params( $params = array() ) {
 	$params['slug'] = array(

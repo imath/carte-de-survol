@@ -1,3 +1,4 @@
+/* global carteDeSurvol */
 ( function( bp, wp, $ ) {
 	// Bail if not set
     if ( typeof carteDeSurvol === 'undefined' ) {
@@ -46,7 +47,7 @@
 			pointerClass: 'carte-de-survol',
 			position: {
 				edge:'top',
-				offset: '-25 0',
+				offset: '-25 0'
 			}
 		} ).pointer( 'open' );
 
@@ -62,11 +63,11 @@
 				pointers[ userName ] = _.first( data );
 
 				$userLink.pointer( {
-					content: template( pointers[ userName ] ),
+					content: template( pointers[ userName ] )
 				} ).pointer( 'update' );
 			} ).fail( function( error ) {
 				$userLink.pointer( {
-					content: template( error.responseJSON ),
+					content: template( error.responseJSON )
 				} ).pointer( 'update' );
 			} );
 		}
@@ -87,9 +88,9 @@
 	var setHoverCards = function() {
 		$( 'a[href^="' + carteDeSurvol.pattern + '"]').hoverIntent( {
 			over: showHoverCard,
-			out: hideHoverCard,
+			out: hideHoverCard
 		} );
-	}
+	};
 
 	$( document ).ready( setHoverCards );
 	$( '[data-bp-list]' ).on( 'bp_ajax_request', setHoverCards );
