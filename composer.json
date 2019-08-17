@@ -1,0 +1,13 @@
+{
+    "name": "imath/carte-de-survol",
+    "description": "BuddyPress plugin to add hovercards to user links.",
+    "type": "wordpress-plugin",
+    "require": {
+        "squizlabs/php_codesniffer" : "^3.3.1"
+    },
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "*",
+        "phpcompatibility/phpcompatibility-wp" : "*",
+        "wp-coding-standards/wpcs": "*"
+    }
+}
