@@ -81,7 +81,7 @@
 		}
 
 		setTimeout( function() {
-			$( event.currentTarget ).pointer().delay( 4000 ).pointer( 'close' );
+			$( event.currentTarget ).pointer().pointer( 'close' );
 		 }, 3000 );
 	};
 
