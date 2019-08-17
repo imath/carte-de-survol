@@ -12,7 +12,7 @@ Cette extension BuddyPress vous propose d'afficher les informations détaillées
 
 - WordPress 5.0.0,
 - BuddyPress 5.0.0,
-- la Rest API de WordPress doit être disponible (elle l'est par défaut).
+- l’API REST de WordPress doit être disponible (elle l'est par défaut).
 
 ### Installation :
 
@@ -26,7 +26,7 @@ BuddyPress plugin to add hovercards to user links.
 
 - WordPress 5.0.0,
 - BuddyPress 5.0.0,
-- the WordPress Rest API must be available (which is the case by default).
+- the WordPress REST API must be available (which is the case by default).
 
 ### Setup
 
