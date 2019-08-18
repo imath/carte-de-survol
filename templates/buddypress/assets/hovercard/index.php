@@ -33,7 +33,7 @@
 					<dl class="cds-profile-fields">
 						<# _.each( data.xprofile.groups[1].fields, function( field ) { #>
 							<dt>{{field.name}}</dt>
-							<dl>{{{field.value.rendered}}}</dl>
+							<dd>{{{field.value.rendered}}}</dd>
 						<# } ) #>
 					</dl>
 				<# } #>

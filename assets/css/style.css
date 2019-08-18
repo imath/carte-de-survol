@@ -40,13 +40,13 @@
 	color: #586069;
 }
 
-.cds-profile-fields dl p {
-	margin: 0;
-	padding: 0;
+.cds-profile-fields dd {
+	margin: 0 0 16px 0;
 }
 
-.cds-profile-fields dl {
-	margin: 0 0 16px 0;
+.cds-profile-fields dd p {
+	margin: 0;
+	padding: 0;
 }
 
 .cds-loader {
