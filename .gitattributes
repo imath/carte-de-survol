@@ -4,11 +4,11 @@
 /.jshintignore export-ignore
 /.jshintrc export-ignore
 /CHANGELOG.md export-ignore
-/composer.json
-/composer.lock
+/composer.json export-ignore
+/composer.lock export-ignore
 /Gruntfile.js export-ignore
 /icon.png export-ignore
 /LICENSE export-ignore
 /package-lock.json export-ignore
 /package.json export-ignore
-/screenshot.png
+/screenshot.png export-ignore
