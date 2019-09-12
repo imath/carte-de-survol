@@ -67,7 +67,7 @@
 				} ).pointer( 'update' );
 			} ).fail( function( error ) {
 				$userLink.pointer( {
-					content: template( error.responseJSON )
+					content: template( error )
 				} ).pointer( 'update' );
 			} );
 		}
