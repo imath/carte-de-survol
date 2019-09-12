@@ -29,7 +29,7 @@
 				<div class="cds-title">{{{data.name}}}</div>
 				<div class="cds-subtitle">@{{{data.mention_name}}}</div>
 
-				<# if ( data.xprofile && data.xprofile.groups[1] ) { #>
+				<# if ( data.xprofile && data.xprofile.groups && data.xprofile.groups[1] ) { #>
 					<dl class="cds-profile-fields">
 						<# _.each( data.xprofile.groups[1].fields, function( field ) { #>
 							<dt>{{field.name}}</dt>
