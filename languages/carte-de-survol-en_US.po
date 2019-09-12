@@ -2,10 +2,10 @@
 # This file is distributed under the GPL-2.0+.
 msgid ""
 msgstr ""
-"Project-Id-Version: Carte de Survol 1.0.0-beta\n"
+"Project-Id-Version: Carte de Survol 1.0.0-beta2\n"
 "Report-Msgid-Bugs-To: https://github.com/imath/carte-de-survol/issues\n"
-"POT-Creation-Date: 2019-08-20 18:32:17+00:00\n"
-"PO-Revision-Date: 2019-08-20 20:33+0100\n"
+"POT-Creation-Date: 2019-09-12 17:18:52+00:00\n"
+"PO-Revision-Date: 2019-09-12 19:19+0100\n"
 "Last-Translator: imath <contact@imathi.eu>\n"
 "Language-Team: FRENCH <contact@imathi.eu>\n"
 "Language: en_US\n"

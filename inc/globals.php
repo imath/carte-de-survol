@@ -17,7 +17,7 @@ defined( 'ABSPATH' ) || exit;
 function carte_de_survol_register_globales() {
 	$cds = carte_de_survol();
 
-	$cds->version  = '1.0.0-beta';
+	$cds->version  = '1.0.0-beta2';
 	$cds->dir      = plugin_dir_path( dirname( __FILE__ ) );
 	$cds->inc_path = plugin_dir_path( __FILE__ );
 	$cds->js_url   = plugins_url( 'assets/js/', dirname( __FILE__ ) );
