@@ -11,7 +11,7 @@
  * Plugin Name:       Carte de Survol
  * Plugin URI:        https://github.com/imath/carte-de-survol
  * Description:       Affichage d'informations détaillées d'un membre de votre communauté BuddyPress au survol du lien pointant vers son profil.
- * Version:           1.0.0-beta2
+ * Version:           1.0.0
  * Author:            imath
  * Author URI:        https://github.com/imath
  * Text Domain:       carte-de-survol
