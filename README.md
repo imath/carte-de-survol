@@ -1,6 +1,6 @@
 # Carte de Survol
 
-| ![hovercard](./screenshot.png) |
+| ![hovercard](https://raw.githubusercontent.com/imath/carte-de-survol/master/screenshot.png) |
 |              :---:             |
 |  Aperçu de la carte de survol  |
 
